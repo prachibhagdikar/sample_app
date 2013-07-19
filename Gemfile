@@ -8,10 +8,14 @@ gem 'rails', '3.0.9'
 gem 'sqlite3'
 
 group :development do
+	gem 'autotest'
+	gem 'ZenTest', '4.8.3' 
 	gem 'rspec-rails'
 end
 
 group :test do
+	gem 'autotest'
+	gem 'ZenTest', '4.8.3' 
 	gem 'rspec'
 end
 
