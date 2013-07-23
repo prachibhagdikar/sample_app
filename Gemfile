@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.9'
+gem 'rails', '3.2.9'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -9,13 +9,11 @@ gem 'sqlite3'
 
 group :development do
 	gem 'autotest'
-	gem 'ZenTest', '4.8.3' 
 	gem 'rspec-rails'
 end
 
 group :test do
-	gem 'autotest'
-	gem 'ZenTest', '4.8.3' 
+	gem 'autotest' 
 	gem 'rspec'
 end
 
