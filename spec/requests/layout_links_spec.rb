@@ -38,5 +38,6 @@ it "should have the right links on the layout" do
     response.should have_selector('title', :content => "Home")
     click_link "Sign up now!"
     response.should have_selector('title', :content => "Sign up")
+    response.should have_selector('a[href="/"]>img')
 end
 end
