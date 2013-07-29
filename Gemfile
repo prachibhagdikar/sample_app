@@ -10,7 +10,6 @@ gem 'sqlite3'
 group :development do
 	gem 'autotest'
 	gem 'rspec-rails'
-	gem 'annotate'
 end
 
 group :test do
