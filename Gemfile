@@ -1,4 +1,5 @@
 source 'http://rubygems.org'
+require 'spork'
 
 gem 'rails', '3.2.9'
 gem 'prototype-rails'
@@ -11,6 +12,7 @@ gem 'sqlite3'
 group :development do
 	gem 'autotest'
 	gem 'rspec-rails'
+	gem 'spork'
 end
 
 group :test do
