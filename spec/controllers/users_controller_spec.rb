@@ -79,7 +79,7 @@ describe UsersController do
       end
     end
 
-    descibe "success" do
+    describe "success" do
 
       before(:each) do
         @attr = { :name => "New User", :email => "user@example.com", :password => "foobar", :password_confirmation => "foobar"}

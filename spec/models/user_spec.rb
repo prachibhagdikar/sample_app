@@ -32,7 +32,7 @@ describe User do
   	no_name_user.should_not be_valid
   end
 
-   it "should require an email address" do
+  it "should require an email address" do
   	no_email_user = User.new(@attr.merge(:email => ""))
   	no_email_user.should_not be_valid
   end
@@ -66,12 +66,12 @@ describe User do
      user_with_duplicate_email.should_not be_valid
     end
 
-    it "should reject email addresses identical up to case" do
+  it "should reject email addresses identical up to case" do
       upcased_email = @attr[:email].upcase
       User.create!(@attr.merge(:email => upcased_email))
       user_with_duplicate_email = User.new(@attr)
       user_with_duplicate_email.should_not be_valid
-    end
+  end
 
     describe "passwords" do
 
@@ -129,8 +129,9 @@ describe User do
 
       it "should have a salt" do
        @user.should respond_to(:salt)
-      end  
-
+      end
+    end
+    
     describe "has_password? method" do
 
       it "should exist" do
@@ -164,4 +165,5 @@ describe User do
         User.authenticate(@attr[:email], @attr[:password]).should == @user
       end
     end
-end  
+end   
+   
