@@ -8,7 +8,6 @@
 #  created_at         :datetime         not null
 #  updated_at         :datetime         not null
 #  encrypted_password :string(255)
-#  salt               :string(255)
 #
 
 class User < ActiveRecord::Base
@@ -38,7 +37,7 @@ class User < ActiveRecord::Base
    def authenticate(email, submitted_password)
      user = find_by_email(email)
      (user && user.has_password?(submitted_password)) ? user : nil
-   end
+    end
 
    def authenticate_with_salt(id, cookie_salt)
      user = find_by_id(id)
