@@ -125,11 +125,11 @@ describe User do
       end
 
       it "should set the encrypted password attribute"
-      @user.encrypted_password.should_not be_blank
+        @user.encrypted_password.should_not be_blank
       end
 
       it "should have a salt" do
-       @user.should respond_to(:salt)
+        @user.should respond_to(:salt)
       end
     end
     
@@ -166,5 +166,7 @@ describe User do
         User.authenticate(@attr[:email], @attr[:password]).should == @user
       end
     end
-end   
+end
+    
+  
    

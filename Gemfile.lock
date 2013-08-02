@@ -112,7 +112,7 @@ PLATFORMS
 
 DEPENDENCIES
   autotest
-  factory_girl_rails (= 1.0)
+  factory_girl_rails
   gravatar_image_tag (= 0.1.0)
   prototype-rails
   rails (= 3.2.9)
