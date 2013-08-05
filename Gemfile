@@ -12,6 +12,7 @@ gem 'sqlite3'
 group :development do
 	gem 'autotest'
 	gem 'rspec-rails'
+	gem 'factory_girl_rails'
 	gem 'spork'
 end
 
@@ -19,6 +20,7 @@ group :test do
 	gem 'autotest' 
 	gem 'rspec'
 	gem 'factory_girl_rails'
+	gem 'guard-rspec'
 end
 
 
