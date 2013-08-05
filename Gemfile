@@ -4,15 +4,17 @@ require 'spork'
 gem 'rails', '3.2.9'
 gem 'prototype-rails'
 gem 'gravatar_image_tag', '0.1.0'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'will_paginate', '3.0.3'
 
 group :development do
 	gem 'autotest'
 	gem 'rspec-rails'
-	gem 'factory_girl_rails'
+	gem 'faker', '0.3.1'
 	gem 'spork'
 end
 
