@@ -4,6 +4,10 @@ require 'spork'
 gem 'rails', '3.2.9'
 gem 'prototype-rails'
 gem 'gravatar_image_tag', '0.1.0'
+gem "mocha", :require => false
+gem 'spork'
+
+
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -15,7 +19,6 @@ group :development do
 	gem 'autotest'
 	gem 'rspec-rails'
 	gem 'faker', '0.3.1'
-	gem 'spork'
 end
 
 group :test do
@@ -23,6 +26,8 @@ group :test do
 	gem 'rspec'
 	gem 'factory_girl_rails'
 	gem 'guard-rspec'
+	gem 'webrat'
+	gem 'nokogiri'
 end
 
 

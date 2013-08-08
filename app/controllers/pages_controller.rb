@@ -1,19 +1,24 @@
 class PagesController < ApplicationController
-	
+    
   def home
-  	@title = "Home"
-    @micropost = Micropost.new if signed_in?
+     @title = "Home"
+     if signed_in?
+     @micropost = Micropost.new 
+     @feed_items = current_user.feed.paginate(:page => params[:page])
+    end
   end
 
   def contact
-  	@title = "Contact"
+    @title = "contact"
   end
 
   def about
-  	@title = "About"
-  end 
-
+    @title = "about"
+  end
   def help
-    @title = "Help"
-  end 
+    @title = "help"
+  end
+  def signup
+    @title = "signup"
+  end
 end
