@@ -26,7 +26,6 @@ group :test do
 	gem 'rspec'
 	gem 'factory_girl_rails'
 	gem 'guard-rspec'
-	gem 'webrat'
 	gem 'nokogiri'
 end
 
